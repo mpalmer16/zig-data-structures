@@ -103,3 +103,7 @@ fn singlyLinkedListUsage() void {
 
     log.info("now the list is:\n\n{any}\n", .{sll});
 }
+
+test {
+    @import("std").testing.refAllDecls(@This());
+}
